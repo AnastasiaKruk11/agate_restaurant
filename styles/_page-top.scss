@@ -1,0 +1,40 @@
+.page-top {
+    padding: 44px 0 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1189px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1310px) {
+    .page-top {
+        padding: 44px 31px 45px 42px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page-top {
+        max-width: 951px;
+        padding: 13px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .page-top {
+        padding-left: 24px;
+        padding-right: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-top {
+        padding: 8px 13px 8px 24px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .page-top {
+        display: block;
+    }
+}

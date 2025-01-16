@@ -1,0 +1,49 @@
+.menu-item-content {
+    text-align: left;
+    &__name {
+        margin-bottom: 15px;
+        font-size: $main-text-size;
+        font-weight: $secondary-font-weight;
+    }
+    &__description {
+        font-size: 0.60rem;
+        color: $secondary-text-color;
+    }
+    &__price {
+        margin-top: 15px;
+        font-size: 0.60rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-item-content {
+        &__name {
+            font-size: $secondary-text-size;
+        }
+        &__description {
+            font-size: 0.50rem;
+        }
+        &__price {
+            margin-top: 17px;
+            font-size: 0.50rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item-content {
+        max-width: 348px;
+        &__name {
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+        &__description {
+            font-size: 0.67rem;
+        }
+        &__price {
+            margin-top: 20px;
+            font-size: 0.67rem;
+        }
+    }
+}

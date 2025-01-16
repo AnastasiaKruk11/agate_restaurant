@@ -1,0 +1,32 @@
+.promo {
+    background-color: $primary-color;
+    &__text {
+        max-width: 941px;
+        margin: 0 auto;
+        font-size: $main-text-size;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .promo {
+        &__text {
+            max-width: 602px;
+            font-size: 0.73rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        &__text {
+            max-width: 541px;
+            font-size: 0.67rem;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .promo {
+        padding: 70px 20px;
+    }
+}

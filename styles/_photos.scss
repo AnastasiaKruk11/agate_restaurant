@@ -1,0 +1,21 @@
+.photos {
+    padding: 100px 12px 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .photos {
+        padding: 100px 0 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photos {
+        padding: 80px 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photos {
+        padding: 70px 18px 0;
+    }
+}

@@ -1,0 +1,16 @@
+.title {
+    font-size: 1.33rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 1.17rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1rem;
+    }
+}

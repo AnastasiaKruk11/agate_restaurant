@@ -1,0 +1,25 @@
+.menu {
+    &__description {
+        margin: 30px 0 60px;
+        font-size: $secondary-text-size;
+        color: $secondary-text-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        &__description {
+            margin-bottom: 48px;
+            font-size: 0.73rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        &__description {
+            margin: 20px 0 58px;
+            font-size: 0.67rem;
+        }
+    }
+}

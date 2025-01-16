@@ -1,0 +1,22 @@
+.socials {
+    &__link:not(:last-child) {
+        margin-right: 40px;
+    }
+    &__link:first-child::before {
+        @include socials-icons (url(../images/facebook.svg));
+    }
+    &__link:nth-child(2)::before {
+        @include socials-icons (url(../images/twitter.svg));
+    }
+    &__link:nth-child(3)::before {
+        @include socials-icons (url(../images/instagram.svg));
+    }
+    &__link:nth-child(n + 1) {
+        &::before {
+            transition: scale .2s linear;
+        }
+        &:hover::before {
+            scale: 1.2;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.chief {
+    background-color: $primary-color;
+    &__photo {
+        max-width: 398px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__job {
+        margin: 30px 0;
+        font-size: $secondary-text-size;
+        color: $secondary-text-color;
+    }
+    &__description {
+        max-width: 939px;
+        margin: 0 auto;
+        font-size: $main-text-size;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chief {
+        &__photo {
+            max-width: 282px;
+        }
+        &__job {
+            font-size: 0.73rem;
+        }
+        &__description {
+            max-width: 691px;
+            font-size: 0.73rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chief {
+        &__photo {
+            max-width: 251px;
+            margin-bottom: 20px;
+        }
+        &__job {
+            font-size: 0.67rem;
+            margin: 20px 0;
+        }
+        &__description {
+            max-width: 626px;
+            font-size: 0.67rem;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .chief {
+        padding: 70px 20px;
+    }
+}

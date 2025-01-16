@@ -1,0 +1,36 @@
+.top-menu {
+    font-size: 0.73rem;
+    line-height: 1.67rem;
+    font-weight: $secondary-font-weight;
+    &__item:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 16px;
+        background-color: $heading-text-color;
+        margin: 0 25px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-menu {
+        font-size: 0.60rem;
+        line-height: 0.75rem;
+        &__item:not(:last-child)::after {
+            height: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .top-menu {
+        &__item:not(:last-child)::after {
+            display: block;
+            margin: 10px auto;
+            width: 15px;
+            height: 1px;
+        }
+        margin-bottom: 10px;
+    }
+}

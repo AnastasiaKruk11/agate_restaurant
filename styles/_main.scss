@@ -1,0 +1,40 @@
+.main {
+    padding: 218px 0 185px 0;
+    &__name {
+        text-transform: uppercase;
+        font-size: 2.83rem;
+        max-width: 914px;
+        margin: 0 auto;
+    }
+    &__description {
+        margin: 35px 0 60px;
+        font-size: $secondary-text-size;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding: 183px 0 153px;
+        &__name {
+            font-size: 2rem;
+            max-width: 697px;
+        }
+        &__description {
+            margin-bottom: 63px;
+            font-size: 0.60rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 171px 0 99px;
+        &__name {
+            font-size: 1.67rem;
+            max-width: 329px;
+        }
+        &__description {
+            margin-bottom: 66px;
+        }
+    }
+}

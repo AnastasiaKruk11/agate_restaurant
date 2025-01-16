@@ -1,0 +1,27 @@
+.button {
+    transition: background-color .7s, color .7s, border-color .7s;
+    &--black {
+        @include buttons (#000, #000);
+        margin-top: 60px;
+    }
+    &--white {
+        @include buttons (#fff, #fff);
+    }
+    &:hover {
+        background-color: #FFA60D;
+        color: $heading-text-color;
+        border-color: #FFA60D;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        max-width: 248px;
+        height: 48px;
+        line-height: 44px;
+        font-size: 0.57rem;
+        &--black {
+            margin-top: 45px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.connection {
+    background-color: #262626;
+    color: #fff;
+    padding: 100px 0;
+    &__offer {
+        margin-bottom: 60px;
+        font-size: 2.17rem;
+    }
+    &__working-time {
+        margin: 60px 0;
+        color: #B1B1B1;
+        font-size: $secondary-text-size;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .connection {
+        padding: 80px 0 78px;
+        &__offer {
+            margin-bottom: 50px;
+            font-size: 1.67rem;
+        }
+        &__working-time {
+            margin: 50px 0 47px;
+            font-size: 0.67rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .connection {
+        padding: 70px 0 65px;
+        &__offer {
+            margin-bottom: 40px;
+            font-size: 1.33rem;
+        }
+        &__working-time {
+            margin: 40px 0 35px;
+            font-size: 0.60rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.up {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    background-color: #FFAC1C;
+    border-radius: 50%;
+    right: 30px;
+    bottom: 15px;
+    transition: scale .2s linear;
+    &:hover {
+        scale: 1.1;
+    }
+    &::after {
+        content: "";
+        background-image: url(../images/arrow.svg);
+        position: absolute;
+        width: 28px;
+        height: 12.73px;
+        top: 28.57px;
+        right: 22px;
+        line-height: 20px;
+    }
+}

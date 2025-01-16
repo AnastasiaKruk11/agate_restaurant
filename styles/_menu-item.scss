@@ -1,0 +1,54 @@
+.menu-item {
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 360px;
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+    &--red::before {
+        @include menu-item-label (#D33B3B, "HOT!");
+    }
+    &--green::before {
+        @include menu-item-label (#B3E151, "NEW!");
+    }
+    &--orange::before {
+        @include menu-item-label (#E5A434, "HIT!");
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-item {
+        width: calc((100% - 2 * 92px) / 3);
+        max-width: 252px;
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+        &::before {
+            width: 46px;
+            height: 46px;
+            top: -23px;
+            left: -23px;
+            line-height: 46px;
+            font-size: 0.40rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        display: flex;
+        vertical-align: middle;
+        width: 100%;
+        max-width: 720px;
+        margin-bottom: 58px;
+        margin-right: 0;
+        &::before {
+            width: 56px;
+            height: 56px;
+            top: -28px;
+            left: -28px;
+            line-height: 56px;
+            font-size: 0.47rem;
+        }
+    }
+}
